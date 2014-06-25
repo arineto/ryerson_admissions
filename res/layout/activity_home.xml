@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:onClick="campus_tour"
     tools:context="com.p15media.ryersonuniversityadmissions.HomeActivity$PlaceholderFragment" >
 
     <ImageView

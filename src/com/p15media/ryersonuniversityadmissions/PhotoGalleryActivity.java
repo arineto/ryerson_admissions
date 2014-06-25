@@ -1,10 +1,10 @@
 package com.p15media.ryersonuniversityadmissions;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 
-public class PhotoGalleryActivity extends ActionBarActivity {
+public class PhotoGalleryActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
