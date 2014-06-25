@@ -15,6 +15,7 @@
         android:theme="@style/Theme.Base" >
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.HomeActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,26 +25,32 @@
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.CampusTourActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_campus_tour" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.AdmissionsHandbookActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_admissions_handbook" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.InternationalGuideActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_international_guide" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.PhotoGalleryActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_photo_gallery" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_video_gallery" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.RyersonBlogsActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_ryerson_blogs" >
         </activity>
     </application>
