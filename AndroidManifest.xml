@@ -22,6 +22,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.CampusTourActivity"
+            android:label="@string/title_activity_campus_tour" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.AdmissionsHandbookActivity"
+            android:label="@string/title_activity_admissions_handbook" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.InternationalGuideActivity"
+            android:label="@string/title_activity_international_guide" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.PhotoGalleryActivity"
+            android:label="@string/title_activity_photo_gallery" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity"
+            android:label="@string/title_activity_video_gallery" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.RyersonBlogsActivity"
+            android:label="@string/title_activity_ryerson_blogs" >
+        </activity>
     </application>
 
 </manifest>

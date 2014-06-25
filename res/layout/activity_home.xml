@@ -2,15 +2,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:onClick="campus_tour"
     tools:context="com.p15media.ryersonuniversityadmissions.HomeActivity$PlaceholderFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/campus_tour_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:onClick="campus_tour"
+        android:src="@drawable/campus_tour_button" />
+
+    <ImageView
+        android:id="@+id/admissions_handbook_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/campus_tour_button"
+        android:layout_marginTop="15dp"
+        android:onClick="admissions_handbook"
+        android:src="@drawable/admissions_handbook_button" />
+
+    <ImageView
+        android:id="@+id/international_guide_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/admissions_handbook_button"
+        android:layout_marginTop="15dp"
+        android:onClick="international_guide"
+        android:src="@drawable/international_guide_button" />
+
+    <ImageView
+        android:id="@+id/photo_gallery_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/international_guide_button"
+        android:layout_marginTop="15dp"
+        android:onClick="photo_gallery"
+        android:src="@drawable/photo_gallery_button" />
+
+    <ImageView
+        android:id="@+id/video_gallery_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/photo_gallery_button"
+        android:layout_marginTop="15dp"
+        android:onClick="video_gallery"
+        android:src="@drawable/video_gallery_button" />
+
+    <ImageView
+        android:id="@+id/ryerson_blogs_button"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/video_gallery_button"
+        android:layout_marginTop="15dp"
+        android:onClick="ryerson_blogs"
+        android:src="@drawable/ryerson_blogs_button" />
 
 </RelativeLayout>

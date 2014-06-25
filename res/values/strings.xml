@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">Ryerson University Admissions</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_campus_tour">CampusTourActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_admissions_handbook">AdmissionsHandbookActivity</string>
+    <string name="title_activity_international_guide">InternationalGuideActivity</string>
+    <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
+    <string name="title_activity_video_gallery">VideoGalleryActivity</string>
+    <string name="title_activity_ryerson_blogs">RyersonBlogsActivity</string>
 
 </resources>
