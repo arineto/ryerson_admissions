@@ -55,7 +55,7 @@ public class HomeActivity extends Activity {
 	public void ryerson_blogs(View view){
 		webView = (WebView) findViewById(R.id.ryerson_blogs_webview);
 		webView.getSettings().setJavaScriptEnabled(true);
-		webView.loadUrl("http://studentlife.ryerson.ca/");
+		webView.loadUrl("http://www.studentlife.ryerson.ca/");
 	}
 
 }
