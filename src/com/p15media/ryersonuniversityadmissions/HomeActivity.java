@@ -1,23 +1,24 @@
 package com.p15media.ryersonuniversityadmissions;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.webkit.WebView;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class HomeActivity extends Activity {
-	
-	private WebView webView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +39,12 @@ public class HomeActivity extends Activity {
 	}
 	
 	public void admissions_handbook(View view){
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.provadys.com/wp-content/uploads/2013/10/test.pdf")));
+		CopyReadAssets("admission.pdf", view.getContext());
+		
 	}
 	
 	public void international_guide(View view){
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hollywood-arts.org/wp-content/uploads/2014/05/pdf-sample.pdf")));
+		CopyReadAssets("international.pdf", view.getContext());
 	}
 	
 	public void photo_gallery(View view){
@@ -58,5 +60,44 @@ public class HomeActivity extends Activity {
 	public void ryerson_blogs(View view){
 		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://why.ryerson.ca/")));
 	}
+	
+	private void CopyReadAssets(String name, Context context)
+    {
+		AssetManager assetManager = getAssets();
+
+        InputStream in = null;
+        OutputStream out = null;
+        File file = new File(getFilesDir(), name);
+        try
+        {
+            in = assetManager.open(name);
+            out = openFileOutput(file.getName(), context.MODE_WORLD_READABLE);
+
+            copyFile(in, out);
+            in.close();
+            in = null;
+            out.flush();
+            out.close();
+            out = null;
+        } catch (Exception e)
+        {
+            Log.e("tag", e.getMessage());
+        }
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setDataAndType(Uri.fromFile(file), "application/pdf");
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        startActivity(intent);
+    }
+
+    private void copyFile(InputStream in, OutputStream out) throws IOException
+    {
+        byte[] buffer = new byte[1024];
+        int read;
+        while ((read = in.read(buffer)) != -1)
+        {
+            out.write(buffer, 0, read);
+        }
+    }
 
 }
