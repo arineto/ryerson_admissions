@@ -1,12 +1,17 @@
 package com.p15media.ryersonuniversityadmissions;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.webkit.WebView;
 
+@SuppressLint("SetJavaScriptEnabled")
 public class HomeActivity extends Activity {
+	
+	private WebView webView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +53,9 @@ public class HomeActivity extends Activity {
 	}
 	
 	public void ryerson_blogs(View view){
-		Intent myIntent = new Intent(view.getContext(), RyersonBlogsActivity.class);
-        startActivityForResult(myIntent, 0);
+		webView = (WebView) findViewById(R.id.ryerson_blogs_webview);
+		webView.getSettings().setJavaScriptEnabled(true);
+		webView.loadUrl("http://studentlife.ryerson.ca/");
 	}
 
 }
