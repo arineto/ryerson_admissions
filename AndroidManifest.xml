@@ -31,16 +31,6 @@
             android:label="@string/title_activity_campus_tour" >
         </activity>
         <activity
-            android:name="com.p15media.ryersonuniversityadmissions.AdmissionsHandbookActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_admissions_handbook" >
-        </activity>
-        <activity
-            android:name="com.p15media.ryersonuniversityadmissions.InternationalGuideActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_international_guide" >
-        </activity>
-        <activity
             android:name="com.p15media.ryersonuniversityadmissions.PhotoGalleryActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_photo_gallery" >
