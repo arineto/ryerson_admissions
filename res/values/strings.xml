@@ -9,5 +9,7 @@
     <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
     <string name="title_activity_video_gallery">VideoGalleryActivity</string>
     <string name="title_activity_ryerson_blogs">RyersonBlogsActivity</string>
+    <string name="title_activity_buildings">BuildingsActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

@@ -29,6 +29,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_central"
 	        android:layout_below="@+id/campus_tour_central"
+	        android:onClick="openKerrHall"
 	        android:text="Kerr Hall" />
 	
 	    <Button
@@ -37,6 +38,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_kerr_hall"
 	        android:layout_below="@+id/campus_tour_kerr_hall"
+	        android:onClick="openRAC"
 	        android:text="RAC" />
 	
 	    <Button
@@ -45,6 +47,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_RAC"
 	        android:layout_below="@+id/campus_tour_RAC"
+	        android:onClick="openTheatreSchool"
 	        android:text="Theatre School" />
 	
 	    <Button
@@ -53,6 +56,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_theatre_school"
 	        android:layout_below="@+id/campus_tour_theatre_school"
+	        android:onClick="openRyersonTheatre"
 	        android:text="Ryerson Theatre" />
 	
 	    <Button
@@ -61,6 +65,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_east"
 	        android:layout_below="@+id/campus_tour_east"
+	        android:onClick="openArchitectureBuilding"
 	        android:text="Architecture Building" />
 	
 	    <Button
@@ -69,6 +74,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_architecture_building"
 	        android:layout_below="@+id/campus_tour_architecture_building"
+	        android:onClick="openEricBuilding"
 	        android:text="Eric Palin-Sally Building" />
 	
 	    <Button
@@ -77,6 +83,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_eric_building"
 	        android:layout_below="@+id/campus_tour_eric_building"
+	        android:onClick="openGeorgeBuilding"
 	        android:text="Geroge Vari Engineering Building" />
 	
 	    <Button
@@ -85,6 +92,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_geroge_building"
 	        android:layout_below="@+id/campus_tour_geroge_building"
+	        android:onClick="openInteriorDesignBuilding"
 	        android:text="Interior Design Building" />
 	
 	    <Button
@@ -93,6 +101,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_interior_design_building"
 	        android:layout_below="@+id/campus_tour_interior_design_building"
+	        android:onClick="openMonetaryTimes"
 	        android:text="Monetary Times" />
 
 	    <TextView
@@ -111,6 +120,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_below="@+id/campus_tour_monetary_times"
 	        android:layout_centerHorizontal="true"
+	        android:onClick="openRogersCentre"
 	        android:text="Rogers Communications Centre" />
 
 	    <TextView
@@ -129,6 +139,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_west"
 	        android:layout_below="@+id/campus_tour_west"
+	        android:onClick="openJorgensonHall"
 	        android:text="Jorgenson Hall" />
 
 	    <Button
@@ -137,6 +148,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_jorgenson_hall"
 	        android:layout_below="@+id/campus_tour_jorgenson_hall"
+	        android:onClick="openLibrary"
 	        android:text="Library" />
 
 	    <Button
@@ -145,6 +157,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_library"
 	        android:layout_below="@+id/campus_tour_library"
+	        android:onClick="openPodiumBuilding"
 	        android:text="Podium Building" />
 
 	    <Button
@@ -153,6 +166,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_podium_building"
 	        android:layout_below="@+id/campus_tour_podium_building"
+	        android:onClick="openStudentLearningCentre"
 	        android:text="Student Learning Centre" />
 
 	    <TextView
@@ -171,6 +185,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_south"
 	        android:layout_below="@+id/campus_tour_south"
+	        android:onClick="openRyersonBookstore"
 	        android:text="Ryerson Bookstore" />
 
 	    <Button
@@ -179,6 +194,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_ryerson_bookstore"
 	        android:layout_below="@+id/campus_tour_ryerson_bookstore"
+	        android:onClick="openHeidenbergBuilding"
 	        android:text="Heidenberg Building" />
 
 	    <Button
@@ -187,6 +203,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_heidenberg_building"
 	        android:layout_below="@+id/campus_tour_heidenberg_building"
+	        android:onClick="openImageArtsBuilding"
 	        android:text="Image Arts Building" />
 
 	    <Button
@@ -195,6 +212,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_image_arts_building"
 	        android:layout_below="@+id/campus_tour_image_arts_building"
+	        android:onClick="openLakeDevo"
 	        android:text="Lake Devo" />
 
 	    <Button
@@ -203,6 +221,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_lake_devo"
 	        android:layout_below="@+id/campus_tour_lake_devo"
+	        android:onClick="openTedRogers"
 	        android:text="Ted Rogers School of Management" />
 
 	    <Button
@@ -211,6 +230,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_ted_rogers"
 	        android:layout_below="@+id/campus_tour_ted_rogers"
+	        android:onClick="openSouthBuilding"
 	        android:text="South Bond Building" />
 
 	    <Button
@@ -219,6 +239,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_south_building"
 	        android:layout_below="@+id/campus_tour_south_building"
+	        android:onClick="openStudentCampusCentre"
 	        android:text="Student Campus Centre" />
 
 	    <TextView
@@ -237,6 +258,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/campus_tour_north"
 	        android:layout_below="@+id/campus_tour_north"
+	        android:onClick="openMattamyCentre"
 	        android:text="Mattamy Centre" />
 
 	</RelativeLayout>

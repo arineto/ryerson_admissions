@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -17,8 +17,8 @@
         android:theme="@style/Theme.Base" >
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.HomeActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,18 +27,22 @@
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.CampusTourActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_campus_tour" >
+            android:label="@string/title_activity_campus_tour"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.PhotoGalleryActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_photo_gallery" >
+            android:label="@string/title_activity_photo_gallery"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_video_gallery" >
+            android:label="@string/title_activity_video_gallery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.p15media.ryersonuniversityadmissions.BuildingsActivity"
+            android:label="@string/title_activity_buildings" >
         </activity>
     </application>
 
