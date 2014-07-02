@@ -42,7 +42,8 @@
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.BuildingsActivity"
-            android:label="@string/title_activity_buildings" >
+            android:label="@string/title_activity_buildings"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

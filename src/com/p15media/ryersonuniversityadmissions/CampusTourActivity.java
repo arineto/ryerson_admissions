@@ -22,103 +22,102 @@ public class CampusTourActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.campus_tour, menu);
 		return true;
 	}
 
 	public void openKerrHall(View view){
-		openActivity(view.getContext(), "kerr_hall");
+		openActivity(view.getContext(), R.raw.kerr);
 	}
 	
 	public void openRAC(View view){
-		openActivity(view.getContext(), "rac");
+		openActivity(view.getContext(), R.raw.rac);
 	}
 	
 	public void openTheatreSchool(View view){
-		openActivity(view.getContext(), "theatre_school");
+		openActivity(view.getContext(), R.raw.theatreschool);
 	}
 	
 	public void openRyersonTheatre(View view){
-		openActivity(view.getContext(), "ryerson_theatre");
+		openActivity(view.getContext(), R.raw.theatre);
 	}
 	
 	public void openArchitectureBuilding(View view){
-		openActivity(view.getContext(), "architecture_building");
+		openActivity(view.getContext(), R.raw.architecture);
 	}
 	
 	public void openEricBuilding(View view){
-		openActivity(view.getContext(), "eric_building");
+		openActivity(view.getContext(), R.raw.eric);
 	}
 	
 	public void openGeorgeBuilding(View view){
-		openActivity(view.getContext(), "george_building");
+		openActivity(view.getContext(), R.raw.george);
 	}
 	
 	public void openInteriorDesignBuilding(View view){
-		openActivity(view.getContext(), "interior_design_building");
+		openActivity(view.getContext(), R.raw.interiordesign);
 	}
 	
 	public void openMonetaryTimes(View view){
-		openActivity(view.getContext(), "monetary_times");
+		openActivity(view.getContext(), R.raw.monetary);
 	}
 	
 	public void openRogersCentre(View view){
-		openActivity(view.getContext(), "rogers_centre");
+		openActivity(view.getContext(), R.raw.rcc);
 	}
 	
 	public void openJorgensonHall(View view){
-		openActivity(view.getContext(), "jorgenson_hall");
+		openActivity(view.getContext(), R.raw.jorgenson);
 	}
 	
 	public void openLibrary(View view){
-		openActivity(view.getContext(), "library");
+		openActivity(view.getContext(), R.raw.library);
 	}
 	
 	public void openPodiumBuilding(View view){
-		openActivity(view.getContext(), "podium_building");
+		openActivity(view.getContext(), R.raw.podium);
 	}
 	
 	public void openStudentLearningCentre(View view){
-		openActivity(view.getContext(), "student_learning_centre");
+		openActivity(view.getContext(), R.raw.studentlearning);
 	}
 	
 	public void openRyersonBookstore(View view){
-		openActivity(view.getContext(), "ryerson_bookstore");
+		openActivity(view.getContext(), R.raw.bookstore);
 	}
 	
 	public void openHeidenbergBuilding(View view){
-		openActivity(view.getContext(), "heidenberg_building");
+		openActivity(view.getContext(), R.raw.heidelberg);
 	}
 	
 	public void openImageArtsBuilding(View view){
-		openActivity(view.getContext(), "image_arts_building");
+		openActivity(view.getContext(), R.raw.imagearts);
 	}
 	
 	public void openLakeDevo(View view){
-		openActivity(view.getContext(), "lake_devo");
+		openActivity(view.getContext(), R.raw.lakedevo);
 	}
 	
 	public void openTedRogers(View view){
-		openActivity(view.getContext(), "ted_rogers");
+		openActivity(view.getContext(), R.raw.rogers);
 	}
 	
 	public void openSouthBuilding(View view){
-		openActivity(view.getContext(), "south_building");
+		openActivity(view.getContext(), R.raw.southdond);
 	}
 	
 	public void openStudentCampusCentre(View view){
-		openActivity(view.getContext(), "student_campus_centre");
+		openActivity(view.getContext(), R.raw.studentcampus);
 	}
 	
 	public void openMattamyCentre(View view){
-		openActivity(view.getContext(), "mattamy_centre");
+		openActivity(view.getContext(), R.raw.mattamy);
 	}
 	
-	public void openActivity(Context context, String building){
+	public void openActivity(Context context, int video_name){
 		intent = new Intent(context, BuildingsActivity.class);
-		intent.putExtra("building", building);
+		intent.putExtra("video_name", video_name);
         startActivity(intent);
 	}
 }

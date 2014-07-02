@@ -3,17 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
+    
+    <VideoView
+        android:id="@+id/building_video"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" />
 
-    <TextView
-        android:id="@+id/building_text_test"
+    <ImageView
+        android:id="@+id/building_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/building_video"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-    
-    <VideoView android:id="@+id/videoView"
-		android:layout_height="fill_parent"
-		android:layout_width="fill_parent"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/campustour_map" />
 
 </RelativeLayout>
