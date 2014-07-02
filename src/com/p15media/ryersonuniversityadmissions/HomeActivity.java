@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.webkit.WebView;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class HomeActivity extends Activity {
@@ -45,6 +46,10 @@ public class HomeActivity extends Activity {
 
 	public void international_guide(View view){
 		CopyReadAssets("international.pdf", view.getContext());
+//		WebView mWebView = new WebView(this);
+//	    mWebView.getSettings().setJavaScriptEnabled(true);
+//	    mWebView.loadUrl("https://docs.google.com/gview?embedded=true&url=http://www.hollywood-arts.org/wp-content/uploads/2014/05/pdf-sample.pdf");
+//	    setContentView(mWebView);
 	}
 
 	public void photo_gallery(View view){
