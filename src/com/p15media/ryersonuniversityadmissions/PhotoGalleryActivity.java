@@ -1,19 +1,14 @@
 package com.p15media.ryersonuniversityadmissions;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
-import android.content.res.TypedArray;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class PhotoGalleryActivity extends Activity {
 	
@@ -22,7 +17,7 @@ public class PhotoGalleryActivity extends Activity {
 						R.drawable.photo11, R.drawable.photo12, R.drawable.photo13, R.drawable.photo14, R.drawable.photo15,
 						R.drawable.photo16, R.drawable.photo17, R.drawable.photo18, R.drawable.photo19};
 	String[] texts = {"Toronto\n\nVibrant, multicultural, and Canada's largest city. Ryerson's campus can be seen in the centre of the image.",
-						"Student Campus Centre\n\nHome to a viriety of student groups and services, as well as the Oakham Café and Ram in the Rye pub.",
+						"Student Campus Centre\n\nHome to a variety of student groups and services, as well as the Oakham Café and Ram in the Rye pub.",
 						"Ronald D. Besse information and Learning Commons\n\nThe Ryerson Library has more than just few book - you can also access technology, tutoring and reference services.",
 						"Students hanging out with our mascot, Eggy the Ram", 
 						"Ted Rogers Schol of Information Management\n\nHome to Ryerson's Bachelor of Commerce and MBA programs, located in the heart of Toronto's business community.",
@@ -34,24 +29,29 @@ public class PhotoGalleryActivity extends Activity {
 						"Student in a lecture hall\n\nThe largest lecture hall on campus seats 500.", 
 						"The lights of Yonge-Dundas Square at night.", "The Quad in winter", "Students studying and taking advantage of the Wi-Fi available across campus", 
 						"Events are held throughout the year in the Quad, including orientation activities and convocation."};
+	Integer[] imageViews = {R.id.imageView1, R.id.imageView2, R.id.imageView3, R.id.imageView4, R.id.imageView5, R.id.imageView6, R.id.imageView7, R.id.imageView8,
+							R.id.imageView9, R.id.imageView10, R.id.imageView11, R.id.imageView12, R.id.imageView13, R.id.imageView14, R.id.imageView15, 
+							R.id.imageView16, R.id.imageView17,	R.id.imageView18, R.id.imageView19};
+	Integer[] textViews = {R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4, R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9, 
+							R.id.textView10, R.id.textView11, R.id.textView12, R.id.textView13, R.id.textView14, R.id.textView15, R.id.textView16, R.id.textView17, 
+							R.id.textView18, R.id.textView19};
 	private ImageView imageView;
 	private TextView textView;
+	
 
+	@SuppressLint("InlinedApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTheme(android.R.style.Theme_DeviceDefault);
 		setContentView(R.layout.activity_photo_gallery);
 		
-//		Gallery ga = (Gallery) findViewById(R.id.photo_gallery);
-//		ga.setAdapter(new ImageAdapter(this));
-//		imageView = (ImageView) findViewById(R.id.photo_gallery_image);
-//		textView = (TextView) findViewById(R.id.photo_gallery_text);
-//		ga.setOnItemClickListener(new OnItemClickListener() {
-//			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-//			    textView.setText(texts[arg2]);
-//			    imageView.setImageResource(pics[arg2]);
-//			}
-//		});
+		for(int i=0; i<pics.length; i++){
+			imageView = (ImageView) findViewById(imageViews[i]);
+			textView = (TextView) findViewById(textViews[i]);
+			textView.setText(texts[i]);
+			imageView.setImageBitmap(decodeSampledBitmapFromResource(getResources(), pics[i], 400, 220));
+		}
 	}
 
 	@Override
@@ -61,45 +61,42 @@ public class PhotoGalleryActivity extends Activity {
 		return true;
 	}
 	
-	public class ImageAdapter extends BaseAdapter{
+	public static int calculateInSampleSize(
+			BitmapFactory.Options options, int reqWidth, int reqHeight) {
+		// Raw height and width of image
+		final int height = options.outHeight;
+		final int width = options.outWidth;
+		int inSampleSize = 1;
 
-		private Context context;
-		int imageBackground;
-		
-		public ImageAdapter(Context context){
-			this.context = context;
-			TypedArray ta = obtainStyledAttributes(R.styleable.Gallery1);
-			ta.getResourceId(R.styleable.Gallery1_android_galleryItemBackground, 1);
-			ta.recycle();
-		}
-		
-		@Override
-		public int getCount() {
-		    return pics.length;
-		}
+		if (height > reqHeight || width > reqWidth) {
 
+			final int halfHeight = height / 2;
+			final int halfWidth = width / 2;
 
-		@Override
-		public Object getItem(int arg0) {
-		    return arg0;
+			// Calculate the largest inSampleSize value that is a power of 2 and keeps both
+			// height and width larger than the requested height and width.
+			while ((halfHeight / inSampleSize) > reqHeight
+					&& (halfWidth / inSampleSize) > reqWidth) {
+				inSampleSize *= 2;
+			}
 		}
 
-		@Override
-		public long getItemId(int arg0) {
-		    return arg0;
-		}
+		return inSampleSize;
+	}
+	
+	public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId, int reqWidth, int reqHeight) {
 
+	    // First decode with inJustDecodeBounds=true to check dimensions
+	    final BitmapFactory.Options options = new BitmapFactory.Options();
+	    options.inJustDecodeBounds = true;
+	    BitmapFactory.decodeResource(res, resId, options);
 
-		@Override
-		public View getView(int arg0, View arg1, ViewGroup arg2) {
-		    ImageView imageView = new ImageView(context);
-		    imageView.setImageResource(pics[arg0]);
-		    imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-		    imageView.setLayoutParams(new Gallery.LayoutParams(150,120));
-		    imageView.setBackgroundResource(imageBackground);
-		    return imageView;
-		}
-		
+	    // Calculate inSampleSize
+	    options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+
+	    // Decode bitmap with inSampleSize set
+	    options.inJustDecodeBounds = false;
+	    return BitmapFactory.decodeResource(res, resId, options);
 	}
 
 }

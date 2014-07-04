@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -45,10 +47,6 @@ public class HomeActivity extends Activity {
 
 	public void international_guide(View view){
 		CopyReadAssets("international.pdf", view.getContext());
-//		WebView mWebView = new WebView(this);
-//	    mWebView.getSettings().setJavaScriptEnabled(true);
-//	    mWebView.loadUrl("https://docs.google.com/gview?embedded=true&url=http://www.hollywood-arts.org/wp-content/uploads/2014/05/pdf-sample.pdf");
-//	    setContentView(mWebView);
 	}
 
 	public void photo_gallery(View view){

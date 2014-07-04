@@ -19,8 +19,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="210dp"
 		    android:layout_alignParentTop="true"
-		    android:layout_centerHorizontal="true"
-		    android:src="@drawable/photo01" />
+		    android:layout_centerHorizontal="true" />
 
 		<TextView
 		    android:id="@+id/textView1"
@@ -30,7 +29,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Toronto\n\nVibrant, multicultural, and Canada&apos;s largest city. Ryerson&apos;s campus can be seen in the centre of the image."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<TextView
@@ -41,18 +39,16 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Student Campus Centre\n\nHome to a viriety of student groups and services, as well as the Oakham Café and Ram in the Rye pub."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<TextView
 		    android:id="@+id/textView3"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView3"
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Ronald D. Besse information and Learning Commons\n\nThe Ryerson Library has more than just few book - you can also access technology, tutoring and reference services."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -61,17 +57,15 @@
 		    android:layout_height="220dp"
 		    android:layout_alignLeft="@+id/textView2"
 		    android:layout_below="@+id/textView1"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo02" />
+		    android:layout_marginTop="20dp" />
 
 		<ImageView
 		    android:id="@+id/imageView4"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_alignLeft="@+id/textView3"
 		    android:layout_below="@+id/textView3"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo04" />
+		    android:layout_marginTop="20dp" />
 
 		<ImageView
 		    android:id="@+id/imageView3"
@@ -79,8 +73,7 @@
 		    android:layout_height="220dp"
 		    android:layout_alignLeft="@+id/textView3"
 		    android:layout_below="@+id/textView2"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo03" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView4"
@@ -90,7 +83,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Students hanging out with our mascot, Eggy the Ram"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -99,8 +91,7 @@
 		    android:layout_height="225dp"
 		    android:layout_below="@+id/textView4"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo05" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView5"
@@ -110,7 +101,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Ted Rogers Schol of Information Management\n\nHome to Ryerson&apos;s Bachelor of Commerce and MBA programs, located in the heart of Toronto&apos;s business community."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -119,8 +109,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView5"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo06" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView6"
@@ -130,7 +119,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Image Arts Building\n\nA former brewery warehouse, the newly renovated space houses the School of Image Arts and Ryerson Image Centre"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -139,8 +127,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView6"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo07" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView7"
@@ -150,37 +137,33 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Campus-wide events, like the annual Parade and Picnic, integrate our campus in the downtown community."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
 		    android:id="@+id/imageView8"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView7"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo08" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView8"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView8"
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Yonge and Dundas"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
 		    android:id="@+id/imageView9"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_alignLeft="@+id/imageView8"
 		    android:layout_below="@+id/textView8"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo09" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView9"
@@ -190,7 +173,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Students on campus"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -199,8 +181,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView9"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo10" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView10"
@@ -210,17 +191,15 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="The Quad"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
 		    android:id="@+id/imageView11"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView10"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo11" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView11"
@@ -230,7 +209,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="George Vari Engineering and Computing Centre"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -239,8 +217,7 @@
 		    android:layout_height="230dp"
 		    android:layout_alignLeft="@+id/imageView11"
 		    android:layout_below="@+id/textView11"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo12" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView12"
@@ -250,7 +227,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="8dp"
 		    android:gravity="center"
-		    android:text="Gould Street\n\nOnce a busy city street, the intersection of Gould and Victoria Street on campus is now filled with patio tables and students enjoying the pedestrian only zone."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -259,8 +235,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView12"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo13" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView13"
@@ -270,7 +245,6 @@
 		    android:layout_below="@+id/imageView13"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Ryerson Campus"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -279,8 +253,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView13"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo14" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView14"
@@ -290,7 +263,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Dundas Subway Station\n\n Ryerson is just steps away from transit options, making it easily accessible."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -299,8 +271,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView14"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo15" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView15"
@@ -310,7 +281,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Student in a lecture hall\n\nThe largest lecture hall on campus seats 500."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -319,8 +289,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView15"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo16" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView16"
@@ -330,7 +299,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="The lights of Yonge-Dundas Square at night."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -339,8 +307,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView16"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo17" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView17"
@@ -350,7 +317,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="The Quad in winter"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -359,8 +325,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView17"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo18" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView18"
@@ -370,7 +335,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Students studying and taking advantage of the Wi-Fi available across campus"
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 		<ImageView
@@ -379,8 +343,7 @@
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView18"
 		    android:layout_centerHorizontal="true"
-		    android:layout_marginTop="20dp"
-		    android:src="@drawable/photo19" />
+		    android:layout_marginTop="20dp" />
 
 		<TextView
 		    android:id="@+id/textView19"
@@ -390,7 +353,6 @@
 		    android:layout_centerHorizontal="true"
 		    android:layout_marginTop="7dp"
 		    android:gravity="center"
-		    android:text="Events are held throughout the year in the Quad, including orientation activities and convocation."
 		    android:textAppearance="?android:attr/textAppearanceSmall" />
 	    
 	</RelativeLayout>
