@@ -42,16 +42,16 @@ public class PhotoGalleryActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_photo_gallery);
 		
-		Gallery ga = (Gallery) findViewById(R.id.photo_gallery);
-		ga.setAdapter(new ImageAdapter(this));
-		imageView = (ImageView) findViewById(R.id.photo_gallery_image);
-		textView = (TextView) findViewById(R.id.photo_gallery_text);
-		ga.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-			    textView.setText(texts[arg2]);
-			    imageView.setImageResource(pics[arg2]);
-			}
-		});
+//		Gallery ga = (Gallery) findViewById(R.id.photo_gallery);
+//		ga.setAdapter(new ImageAdapter(this));
+//		imageView = (ImageView) findViewById(R.id.photo_gallery_image);
+//		textView = (TextView) findViewById(R.id.photo_gallery_text);
+//		ga.setOnItemClickListener(new OnItemClickListener() {
+//			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+//			    textView.setText(texts[arg2]);
+//			    imageView.setImageResource(pics[arg2]);
+//			}
+//		});
 	}
 
 	@Override
