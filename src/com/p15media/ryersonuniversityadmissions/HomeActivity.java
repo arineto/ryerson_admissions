@@ -42,14 +42,44 @@ public class HomeActivity extends Activity {
 	}
 
 	public void admissions_handbook(View view){
+		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
+        myPd_ring.setCancelable(true);
+        new Thread(new Runnable() {
+              public void run() {
+                    try{
+                          Thread.sleep(5000);
+                    }catch(Exception e){}
+                    myPd_ring.dismiss();
+              }
+        }).start();
 		CopyReadAssets("admission.pdf", view.getContext());		
 	}
 
 	public void international_guide(View view){
+		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
+        myPd_ring.setCancelable(true);
+        new Thread(new Runnable() {
+              public void run() {
+                    try{
+                          Thread.sleep(2000);
+                    }catch(Exception e){}
+                    myPd_ring.dismiss();
+              }
+        }).start();
 		CopyReadAssets("international.pdf", view.getContext());
 	}
 
 	public void photo_gallery(View view){
+		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
+        myPd_ring.setCancelable(true);
+        new Thread(new Runnable() {
+              public void run() {
+                    try{
+                          Thread.sleep(3000);
+                    }catch(Exception e){}
+                    myPd_ring.dismiss();
+              }
+        }).start();
 		intent = new Intent(view.getContext(), PhotoGalleryActivity.class);
 		startActivityForResult(intent, 0);
 	}
