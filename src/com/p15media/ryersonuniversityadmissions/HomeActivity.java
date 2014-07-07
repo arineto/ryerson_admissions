@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -42,31 +43,13 @@ public class HomeActivity extends Activity {
 	}
 
 	public void admissions_handbook(View view){
-		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
-        myPd_ring.setCancelable(true);
-        new Thread(new Runnable() {
-              public void run() {
-                    try{
-                          Thread.sleep(5000);
-                    }catch(Exception e){}
-                    myPd_ring.dismiss();
-              }
-        }).start();
-		CopyReadAssets("admission.pdf", view.getContext());		
+		ProgressDialog pd = ProgressDialog.show(this, "Please wait", "Loading please wait..", true, false);
+		new CopyRead("admission.pdf", view.getContext(), pd).execute("");
 	}
 
 	public void international_guide(View view){
-		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
-        myPd_ring.setCancelable(true);
-        new Thread(new Runnable() {
-              public void run() {
-                    try{
-                          Thread.sleep(2000);
-                    }catch(Exception e){}
-                    myPd_ring.dismiss();
-              }
-        }).start();
-		CopyReadAssets("international.pdf", view.getContext());
+		ProgressDialog pd = ProgressDialog.show(this, "Please wait", "Loading please wait..", true, false);
+		new CopyRead("international.pdf", view.getContext(), pd).execute("");
 	}
 
 	public void photo_gallery(View view){
@@ -92,39 +75,61 @@ public class HomeActivity extends Activity {
 	public void ryerson_blogs(View view){
 		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://why.ryerson.ca/")));
 	}
+	
+	private class CopyRead extends AsyncTask<String, Void, Object>{
+		
+		String name;
+		Context context;
+		ProgressDialog dialog;
 
-	private void CopyReadAssets(String name, Context context){
-		AssetManager assetManager = getAssets();
+		public CopyRead(String name, Context context, ProgressDialog dialog){
+			this.name = name;
+			this.context = context;
+			this.dialog = dialog;
+		}
+		
+		protected Object doInBackground(String... arg0) {
+			CopyReadAssets(name, context);
+			return null;	
+		}
+		
+		protected void onPostExecute(Object result) {
+            dialog.dismiss();
+        }
+		
+		private void CopyReadAssets(String name, Context context){
+			AssetManager assetManager = getAssets();
 
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), name);
-		try{
-			in = assetManager.open(name);
-			out = openFileOutput(file.getName(), context.MODE_WORLD_READABLE);
+			InputStream in = null;
+			OutputStream out = null;
+			File file = new File(getFilesDir(), name);
+			try{
+				in = assetManager.open(name);
+				out = openFileOutput(file.getName(), context.MODE_WORLD_READABLE);
 
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e){
-			Log.e("tag", e.getMessage());
+				copyFile(in, out);
+				in.close();
+				in = null;
+				out.flush();
+				out.close();
+				out = null;
+			} catch (Exception e){
+				Log.e("tag", e.getMessage());
+			}
+
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setDataAndType(Uri.fromFile(file), "application/pdf");
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			startActivity(intent);
 		}
 
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(Uri.fromFile(file), "application/pdf");
-		intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-		startActivity(intent);
-	}
-
-	private void copyFile(InputStream in, OutputStream out) throws IOException{
-		byte[] buffer = new byte[1024];
-		int read;
-		while ((read = in.read(buffer)) != -1){
-			out.write(buffer, 0, read);
+		private void copyFile(InputStream in, OutputStream out) throws IOException{
+			byte[] buffer = new byte[1024];
+			int read;
+			while ((read = in.read(buffer)) != -1){
+				out.write(buffer, 0, read);
+			}
 		}
+		
 	}
-
 }
