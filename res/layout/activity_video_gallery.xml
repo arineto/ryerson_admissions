@@ -8,9 +8,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity$PlaceholderFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Video Gallery" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="openMakeYourMark"
+        android:text="Make Your Mark" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openHowTo"
+        android:text="How To" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openCampusLife"
+        android:text="Campus Life" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openAdmissionsPage"
+        android:text="Admissions Page" />
 
 </RelativeLayout>
