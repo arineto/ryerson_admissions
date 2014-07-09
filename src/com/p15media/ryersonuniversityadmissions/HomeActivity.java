@@ -77,8 +77,8 @@ public class HomeActivity extends Activity {
 	}
 	
 	public void openConnect(View view){
-//		intent = new Intent(view.getContext(), ConnectActivity.class);
-//		startActivityForResult(intent, 0);
+		intent = new Intent(view.getContext(), ConnectActivity.class);
+		startActivityForResult(intent, 0);
 	}
 	
 	private class CopyRead extends AsyncTask<String, Void, Object>{
