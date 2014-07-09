@@ -47,7 +47,8 @@
         </activity>
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.ConnectActivity"
-            android:label="@string/title_activity_connect" >
+            android:label="@string/title_activity_connect" 
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
