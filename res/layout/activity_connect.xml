@@ -2,64 +2,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/connect"
+    android:background="@drawable/connectbg"
     tools:context="${packageName}.${activityClass}" >
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="65dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginLeft="31dp"
-        android:onClick="openSnapchat"/>
+	<ImageView
+	    android:id="@+id/layers_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/layers" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_marginBottom="28dp"
-        android:layout_marginLeft="28dp"
-        android:onClick="openNews"/>
+	<ImageView
+	    android:id="@+id/fb_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="86dp"
+	    android:layout_marginTop="178dp"
+	    android:onClick="openFacebook"/>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_above="@+id/imageView2"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="27dp"
-        android:layout_marginRight="76dp"
-        android:onClick="openFacebook" />
+	<ImageView
+	    android:id="@+id/instagram_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignRight="@+id/fb_button"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="48dp"
+	    android:onClick="openInstagram"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/imageView1"
-        android:onClick="openInstagram" />
+	<ImageView
+	    android:id="@+id/snapchat_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/instagram_button"
+	    android:layout_marginLeft="32dp"
+	    android:onClick="openSnapchat"/>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/imageView3"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="14dp"
-        android:layout_toLeftOf="@+id/imageView2"
-        android:onClick="openVine" />
+	<ImageView
+	    android:id="@+id/vine_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_below="@+id/snapchat_button"
+	    android:layout_marginRight="26dp"
+	    android:layout_marginTop="7dp"
+	    android:layout_toLeftOf="@+id/instagram_button"
+	    android:onClick="openVine"/>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="14dp"
-        android:onClick="openTwitter" />
+	<ImageView
+	    android:id="@+id/twitter_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignLeft="@+id/instagram_button"
+	    android:layout_alignTop="@+id/vine_button"
+	    android:layout_marginLeft="19dp"
+	    android:layout_marginTop="16dp"
+	    android:onClick="openTwitter"/>
+
+	<ImageView
+	    android:id="@+id/news_button"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignBottom="@+id/vine_button"
+	    android:layout_marginBottom="20dp"
+	    android:layout_marginLeft="7dp"
+	    android:layout_toRightOf="@+id/twitter_button"
+	    android:onClick="openNews"/>
 
 </RelativeLayout>
