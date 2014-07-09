@@ -11,5 +11,6 @@
     <string name="title_activity_ryerson_blogs">RyersonBlogsActivity</string>
     <string name="title_activity_buildings">BuildingsActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_connect">ConnectActivity</string>
 
 </resources>

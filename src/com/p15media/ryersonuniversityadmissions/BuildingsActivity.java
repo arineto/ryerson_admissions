@@ -3,15 +3,18 @@ package com.p15media.ryersonuniversityadmissions;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class BuildingsActivity extends Activity {
 	
 	private VideoView video;
+	private ImageView image;
 	private MediaController controller;
 	private String path;
 	private int video_name;
+	private int picture_name;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,10 @@ public class BuildingsActivity extends Activity {
 		setContentView(R.layout.activity_buildings);
 		
 		video_name = getIntent().getExtras().getInt("video_name");
+		picture_name =  getIntent().getExtras().getInt("picture_name");
+		
+		image = (ImageView) findViewById(R.id.building_image);
+		image.setImageResource(picture_name);
 		
 		video = (VideoView) findViewById(R.id.building_video);
 		path = "android.resource://" + getPackageName() + "/" + video_name;
