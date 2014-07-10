@@ -25,7 +25,7 @@ public class BuildingsActivity extends Activity {
 		picture_name =  getIntent().getExtras().getInt("picture_name");
 		
 		image = (ImageView) findViewById(R.id.building_image);
-		image.setImageResource(picture_name);
+		image.setImageBitmap(new PictureBitmap(getResources(), picture_name, 400, 400).decodeSampledBitmapFromResource());
 		
 		video = (VideoView) findViewById(R.id.building_video);
 		path = "android.resource://" + getPackageName() + "/" + video_name;

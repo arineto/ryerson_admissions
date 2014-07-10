@@ -112,6 +112,7 @@ public class HomeActivity extends Activity {
             dialog.dismiss();
         }
 		
+		@SuppressWarnings({ "static-access", "deprecation" })
 		private void CopyReadAssets(String name, Context context){
 			AssetManager assetManager = getAssets();
 
