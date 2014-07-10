@@ -1,6 +1,7 @@
 package com.p15media.ryersonuniversityadmissions;
 
 import android.app.Activity;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -24,8 +25,10 @@ public class BuildingsActivity extends Activity {
 		video_name = getIntent().getExtras().getInt("video_name");
 		picture_name =  getIntent().getExtras().getInt("picture_name");
 		
+		final BitmapFactory.Options options = new BitmapFactory.Options();
+		
 		image = (ImageView) findViewById(R.id.building_image);
-		image.setImageBitmap(new PictureBitmap(getResources(), picture_name, 400, 400).decodeSampledBitmapFromResource());
+		image.setImageBitmap(new PictureBitmap(options).decodeSampledBitmapFromResource(getResources(), picture_name, 400, 400));
 		
 		video = (VideoView) findViewById(R.id.building_video);
 		path = "android.resource://" + getPackageName() + "/" + video_name;

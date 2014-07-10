@@ -2,6 +2,8 @@ package com.p15media.ryersonuniversityadmissions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
@@ -43,11 +45,16 @@ public class PhotoGalleryActivity extends Activity {
 		setTheme(android.R.style.Theme_DeviceDefault);
 		setContentView(R.layout.activity_photo_gallery);
 		
+		final BitmapFactory.Options options = new BitmapFactory.Options();
+		PictureBitmap pb = new PictureBitmap(options);
+		Bitmap bitmap;
+		
 		for(int i=0; i<pics.length; i++){
 			imageView = (ImageView) findViewById(imageViews[i]);
 			textView = (TextView) findViewById(textViews[i]);
 			textView.setText(texts[i]);
-			imageView.setImageBitmap(new PictureBitmap(getResources(), pics[i], 400, 220).decodeSampledBitmapFromResource());
+			bitmap = pb.decodeSampledBitmapFromResource(getResources(), pics[i], 300, 165);
+			imageView.setImageBitmap(bitmap);
 		}
 	}
 

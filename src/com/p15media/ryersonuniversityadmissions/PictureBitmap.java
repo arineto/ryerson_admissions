@@ -5,17 +5,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 public class PictureBitmap {
+
+	final BitmapFactory.Options options;
 	
-	static Resources res;
-	static int resId;
-	static int reqWidth;
-	static int reqHeight;
-	
-	public PictureBitmap(Resources res, int resId, int reqWidth, int reqHeight){
-		PictureBitmap.res = res;
-		PictureBitmap.resId = resId;
-		PictureBitmap.reqWidth = reqWidth;
-		PictureBitmap.reqHeight = reqHeight;
+	public PictureBitmap(final BitmapFactory.Options options){
+		this.options = options;
 	}
 	
 	public static int calculateInSampleSize(
@@ -41,10 +35,7 @@ public class PictureBitmap {
 		return inSampleSize;
 	}
 	
-	public Bitmap decodeSampledBitmapFromResource() {
-
-	    // First decode with inJustDecodeBounds=true to check dimensions
-	    final BitmapFactory.Options options = new BitmapFactory.Options();
+	public Bitmap decodeSampledBitmapFromResource(Resources res, int resId, int reqWidth, int reqHeight) {
 	    options.inJustDecodeBounds = true;
 	    BitmapFactory.decodeResource(res, resId, options);
 
@@ -55,5 +46,4 @@ public class PictureBitmap {
 	    options.inJustDecodeBounds = false;
 	    return BitmapFactory.decodeResource(res, resId, options);
 	}
-
 }

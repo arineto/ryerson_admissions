@@ -16,14 +16,14 @@
 
 		<ImageView
 		    android:id="@+id/connect_button"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="210dp"
 		    android:layout_alignParentTop="true"
 		    android:layout_centerHorizontal="true" />
 
 		<TextView
 		    android:id="@+id/textView1"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/connect_button"
 		    android:layout_centerHorizontal="true"
@@ -33,7 +33,7 @@
 
 		<TextView
 		    android:id="@+id/textView2"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView2"
 		    android:layout_centerHorizontal="true"
@@ -53,9 +53,9 @@
 
 		<ImageView
 		    android:id="@+id/imageView2"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
-		    android:layout_alignLeft="@+id/textView2"
+		    android:layout_alignLeft="@+id/textView1"
 		    android:layout_below="@+id/textView1"
 		    android:layout_marginTop="20dp" />
 
@@ -69,7 +69,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView3"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_alignLeft="@+id/textView3"
 		    android:layout_below="@+id/textView2"
@@ -77,7 +77,7 @@
 
 		<TextView
 		    android:id="@+id/textView4"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView4"
 		    android:layout_centerHorizontal="true"
@@ -87,7 +87,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView5"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="225dp"
 		    android:layout_below="@+id/textView4"
 		    android:layout_centerHorizontal="true"
@@ -95,7 +95,7 @@
 
 		<TextView
 		    android:id="@+id/textView5"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView5"
 		    android:layout_centerHorizontal="true"
@@ -105,7 +105,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView6"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView5"
 		    android:layout_centerHorizontal="true"
@@ -113,7 +113,7 @@
 
 		<TextView
 		    android:id="@+id/textView6"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView6"
 		    android:layout_centerHorizontal="true"
@@ -123,7 +123,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView7"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView6"
 		    android:layout_centerHorizontal="true"
@@ -131,7 +131,7 @@
 
 		<TextView
 		    android:id="@+id/textView7"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView7"
 		    android:layout_centerHorizontal="true"
@@ -167,7 +167,7 @@
 
 		<TextView
 		    android:id="@+id/textView9"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView9"
 		    android:layout_centerHorizontal="true"
@@ -177,7 +177,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView10"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView9"
 		    android:layout_centerHorizontal="true"
@@ -185,7 +185,7 @@
 
 		<TextView
 		    android:id="@+id/textView10"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView10"
 		    android:layout_centerHorizontal="true"
@@ -213,7 +213,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView12"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="230dp"
 		    android:layout_alignLeft="@+id/imageView11"
 		    android:layout_below="@+id/textView11"
@@ -231,7 +231,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView13"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView12"
 		    android:layout_centerHorizontal="true"
@@ -249,7 +249,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView14"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView13"
 		    android:layout_centerHorizontal="true"
@@ -257,7 +257,7 @@
 
 		<TextView
 		    android:id="@+id/textView14"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView14"
 		    android:layout_centerHorizontal="true"
@@ -267,7 +267,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView15"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView14"
 		    android:layout_centerHorizontal="true"
@@ -275,7 +275,7 @@
 
 		<TextView
 		    android:id="@+id/textView15"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView15"
 		    android:layout_centerHorizontal="true"
@@ -285,7 +285,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView16"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView15"
 		    android:layout_centerHorizontal="true"
@@ -293,7 +293,7 @@
 
 		<TextView
 		    android:id="@+id/textView16"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView16"
 		    android:layout_centerHorizontal="true"
@@ -303,7 +303,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView17"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView16"
 		    android:layout_centerHorizontal="true"
@@ -311,7 +311,7 @@
 
 		<TextView
 		    android:id="@+id/textView17"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView17"
 		    android:layout_centerHorizontal="true"
@@ -321,7 +321,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView18"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView17"
 		    android:layout_centerHorizontal="true"
@@ -329,7 +329,7 @@
 
 		<TextView
 		    android:id="@+id/textView18"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView18"
 		    android:layout_centerHorizontal="true"
@@ -339,7 +339,7 @@
 
 		<ImageView
 		    android:id="@+id/imageView19"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="220dp"
 		    android:layout_below="@+id/textView18"
 		    android:layout_centerHorizontal="true"
@@ -347,7 +347,7 @@
 
 		<TextView
 		    android:id="@+id/textView19"
-		    android:layout_width="wrap_content"
+		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@+id/imageView19"
 		    android:layout_centerHorizontal="true"
