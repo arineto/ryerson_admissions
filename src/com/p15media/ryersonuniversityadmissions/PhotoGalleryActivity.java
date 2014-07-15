@@ -2,8 +2,11 @@ package com.p15media.ryersonuniversityadmissions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
@@ -28,7 +31,7 @@ public class PhotoGalleryActivity extends Activity {
 						"Student in a lecture hall\n\nThe largest lecture hall on campus seats 500.", 
 						"The lights of Yonge-Dundas Square at night.", "The Quad in winter", "Students studying and taking advantage of the Wi-Fi available across campus", 
 						"Events are held throughout the year in the Quad, including orientation activities and convocation."};
-	Integer[] imageViews = {R.id.connect_button, R.id.imageView2, R.id.imageView3, R.id.imageView4, R.id.imageView5, R.id.imageView6, R.id.imageView7, R.id.imageView8,
+	Integer[] imageViews = {R.id.imageView1, R.id.imageView2, R.id.imageView3, R.id.imageView4, R.id.imageView5, R.id.imageView6, R.id.imageView7, R.id.imageView8,
 							R.id.imageView9, R.id.imageView10, R.id.imageView11, R.id.imageView12, R.id.imageView13, R.id.imageView14, R.id.imageView15, 
 							R.id.imageView16, R.id.imageView17,	R.id.imageView18, R.id.imageView19};
 	Integer[] textViews = {R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4, R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9, 
@@ -38,7 +41,7 @@ public class PhotoGalleryActivity extends Activity {
 	private TextView textView;
 	
 
-	@SuppressLint("InlinedApi")
+	@SuppressLint({ "InlinedApi", "NewApi" })
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -47,14 +50,22 @@ public class PhotoGalleryActivity extends Activity {
 		
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		PictureBitmap pb = new PictureBitmap(options);
-		Bitmap bitmap;
+		Configuration config = getResources().getConfiguration();
 		
 		for(int i=0; i<pics.length; i++){
 			imageView = (ImageView) findViewById(imageViews[i]);
+			
+	        if (config.smallestScreenWidthDp >= 720) {
+	            imageView.getLayoutParams().height = 450;
+	        } else if (config.smallestScreenWidthDp >= 600) {
+	        	imageView.getLayoutParams().height = 360;
+	        } else if (config.smallestScreenWidthDp >= 480) {
+	        	imageView.getLayoutParams().height = 280;
+	        }
+	        
 			textView = (TextView) findViewById(textViews[i]);
 			textView.setText(texts[i]);
-			bitmap = pb.decodeSampledBitmapFromResource(getResources(), pics[i], 300, 165);
-			imageView.setImageBitmap(bitmap);
+			imageView.setImageBitmap(pb.decodeSampledBitmapFromResource(getResources(), pics[i], 300, 165));
 		}
 	}
 
