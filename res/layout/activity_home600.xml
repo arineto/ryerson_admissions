@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/connect_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ryerson_blogs_button"
+        android:layout_marginTop="25dp"
+        android:onClick="openConnect"
+        android:src="@drawable/connect_button" />
+
+    <ImageView
+        android:id="@+id/ryerson_blogs_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/video_gallery_button"
+        android:layout_marginTop="25dp"
+        android:onClick="ryerson_blogs"
+        android:src="@drawable/ryerson_blogs_button" />
+
+    <ImageView
+        android:id="@+id/video_gallery_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/photo_gallery_button"
+        android:layout_marginTop="25dp"
+        android:onClick="video_gallery"
+        android:src="@drawable/video_gallery_button" />
+
+    <ImageView
+        android:id="@+id/photo_gallery_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/international_guide_button"
+        android:layout_marginTop="25dp"
+        android:onClick="photo_gallery"
+        android:src="@drawable/photo_gallery_button" />
+
+    <ImageView
+        android:id="@+id/campus_tour_button"
+        android:layout_width="440dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/admissions_handbook_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="campus_tour"
+        android:src="@drawable/campus_tour_button" />
+
+    <ImageView
+        android:id="@+id/international_guide_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="international_guide"
+        android:src="@drawable/international_guide_button" />
+
+    <ImageView
+        android:id="@+id/admissions_handbook_button"
+        android:layout_width="440dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/international_guide_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="admissions_handbook"
+        android:src="@drawable/admissions_handbook_button" />
+
+</RelativeLayout>

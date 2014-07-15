@@ -11,6 +11,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -24,10 +25,21 @@ public class HomeActivity extends Activity {
 
 	private Intent intent;
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home);
+		
+		Configuration config = getResources().getConfiguration();
+        if (config.smallestScreenWidthDp >= 720) {
+            setContentView(R.layout.activity_home720);
+        } else if (config.smallestScreenWidthDp >= 600) {
+            setContentView(R.layout.activity_home600);
+        } else if (config.smallestScreenWidthDp >= 480) {
+            setContentView(R.layout.activity_home480);
+        } else {
+            setContentView(R.layout.activity_home);
+        }
 	}
 
 	@Override

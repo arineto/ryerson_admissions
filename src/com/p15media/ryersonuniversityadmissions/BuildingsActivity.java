@@ -1,6 +1,8 @@
 package com.p15media.ryersonuniversityadmissions;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,10 +19,11 @@ public class BuildingsActivity extends Activity {
 	private int video_name;
 	private int picture_name;
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_buildings);
+        setContentView(R.layout.activity_buildings);
 		
 		video_name = getIntent().getExtras().getInt("video_name");
 		picture_name =  getIntent().getExtras().getInt("picture_name");
