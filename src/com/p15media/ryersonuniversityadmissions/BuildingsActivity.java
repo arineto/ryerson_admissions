@@ -2,7 +2,6 @@ package com.p15media.ryersonuniversityadmissions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connectbg"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/lines"
+        android:layout_width="600dp"
+        android:layout_height="465dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="345dp"
+        android:src="@drawable/lines" />
+
+    <ImageView
+        android:id="@+id/snapchat_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@+id/lines"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="89dp"
+        android:onClick="openSnapchat"
+        android:src="@drawable/snapchat_icon" />
+
+    <ImageView
+        android:id="@+id/news_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/snapchat_icon"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/instagram_icon"
+        android:onClick="openNews"
+        android:src="@drawable/newsletter_icon" />
+
+    <ImageView
+        android:id="@+id/facebook_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_above="@+id/instagram_icon"
+        android:layout_alignRight="@+id/lines"
+        android:layout_marginBottom="79dp"
+        android:layout_marginRight="22dp"
+        android:onClick="openFacebook"
+        android:src="@drawable/fb_icon" />
+
+    <ImageView
+        android:id="@+id/instagram_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignRight="@+id/facebook_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="70dp"
+        android:onClick="openInstagram"
+        android:src="@drawable/intagram_icon" />
+
+    <ImageView
+        android:id="@+id/twitter_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignRight="@+id/facebook_icon"
+        android:layout_below="@+id/snapchat_icon"
+        android:layout_marginRight="21dp"
+        android:onClick="openTwitter"
+        android:src="@drawable/twitter_icon" />
+
+    <ImageView
+        android:id="@+id/vine_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@+id/twitter_icon"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@+id/snapchat_icon"
+        android:onClick="openVIne"
+        android:src="@drawable/vine_icon" />
+
+</RelativeLayout>

@@ -1,18 +1,32 @@
 package com.p15media.ryersonuniversityadmissions;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 public class ConnectActivity extends Activity {
+	
+	Integer[] imageViews = {R.id.imageView1, R.id.imageView2, R.id.imageView3, R.id.imageView4, R.id.imageView5, R.id.imageView6, R.id.imageView7};
+	Integer[] pics = {R.drawable.lines, R.drawable.fb_icon, R.drawable.intagram_icon, R.drawable.snapchat_icon, R.drawable.vine_icon, R.drawable.twitter_icon, R.drawable.newsletter_icon};
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_connect);
+		
+		Configuration config = getResources().getConfiguration();
+        if (config.smallestScreenWidthDp >= 720) {
+            setContentView(R.layout.activity_connect720);
+        } else if (config.smallestScreenWidthDp >= 600) {
+            setContentView(R.layout.activity_connect600);
+        } else {
+            setContentView(R.layout.activity_connect);
+        }
 	}
 	
 	public void openFacebook(View view){
