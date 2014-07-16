@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
@@ -72,4 +73,15 @@ public class PhotoGalleryActivity extends Activity {
 		getMenuInflater().inflate(R.menu.photo_gallery, menu);
 		return true;
 	}
+	
+	@Override
+    public void onStop() {
+        super.onStop();
+        for(int i = 0; i<imageViews.length; i++){
+        	ImageView imageView = (ImageView) findViewById(imageViews[i]);
+        	Drawable d = imageView.getDrawable();  
+        	if (d != null) d.setCallback(null);  
+        	imageView.setImageDrawable(null); 
+        }
+    }
 }

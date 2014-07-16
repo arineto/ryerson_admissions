@@ -14,7 +14,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Base" >
+        android:theme="@style/Theme.Base"
+        android:largeHeap="true" >
         <activity
             android:name="com.p15media.ryersonuniversityadmissions.HomeActivity"
             android:label="@string/app_name"
