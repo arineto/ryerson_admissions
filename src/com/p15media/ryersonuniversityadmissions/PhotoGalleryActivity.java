@@ -62,7 +62,7 @@ public class PhotoGalleryActivity extends Activity {
 	        
 			textView = (TextView) findViewById(textViews[i]);
 			textView.setText(texts[i]);
-			imageView.setImageBitmap(pb.decodeSampledBitmapFromResource(getResources(), pics[i], 200, 110));
+			imageView.setImageBitmap(pb.decodeSampledBitmapFromResource(getResources(), pics[i], 300, 165));
 		}
 	}
 
