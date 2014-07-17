@@ -80,6 +80,16 @@ public class HomeActivity extends Activity {
 	}
 
 	public void video_gallery(View view){
+		final ProgressDialog myPd_ring=ProgressDialog.show(HomeActivity.this, "Please wait", "Loading please wait..", true);
+        myPd_ring.setCancelable(true);
+        new Thread(new Runnable() {
+              public void run() {
+                    try{
+                          Thread.sleep(3000);
+                    }catch(Exception e){}
+                    myPd_ring.dismiss();
+              }
+        }).start();
 		intent = new Intent(view.getContext(), VideoGalleryActivity.class);
 		startActivityForResult(intent, 0);
 	}

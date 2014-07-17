@@ -6,42 +6,42 @@
     tools:context="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity$PlaceholderFragment" >
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
-        android:layout_marginTop="30dp"
-        android:onClick="openHowTo"
-        android:src="@drawable/howto" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="30dp"
-        android:onClick="openCampusLife"
-        android:src="@drawable/campuslife" />
-
-    <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_width="650dp"
+        android:layout_height="130dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/imageView3"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="73dp"
         android:onClick="openAdmissionsPage"
         android:src="@drawable/admissionspage" />
 
     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="650dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="80dp"
+        android:onClick="openCampusLife"
+        android:src="@drawable/campuslife" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="650dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="79dp"
+        android:onClick="openHowTo"
+        android:src="@drawable/howto" />
+
+    <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_width="650dp"
+        android:layout_height="130dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="230dp"
         android:onClick="openMakeYourMark"
         android:src="@drawable/makeyourmark" />
 

@@ -3,6 +3,7 @@ package com.p15media.ryersonuniversityadmissions;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,8 +17,15 @@ public class VideoGalleryActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setTheme(android.R.style.Theme_DeviceDefault_Light);
-		setContentView(R.layout.activity_video_gallery);
+		
+		Configuration config = getResources().getConfiguration();
+        if (config.smallestScreenWidthDp >= 720) {
+            setContentView(R.layout.activity_video_gallery720);
+        } else if (config.smallestScreenWidthDp >= 600) {
+            setContentView(R.layout.activity_video_gallery600);
+        } else {
+            setContentView(R.layout.activity_video_gallery);
+        }
 	}
 
 	@Override
