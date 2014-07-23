@@ -15,7 +15,7 @@ public class BuildingsActivity extends YouTubeBaseActivity implements YouTubePla
 	private ImageView image;
 	private String video_name;
 	private int picture_name;
-	static private final String DEVELOPER_KEY = "AIzaSyBOdkeGbh6pBewgLJ2nz7D91oLShbXOclI";
+	static private final String DEVELOPER_KEY = "AIzaSyCYC7QzacEulGZDShoIjFcPB8pYQ2qqQBc";
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
