@@ -50,15 +50,27 @@ public class ConnectActivity extends Activity {
 	}
 	
 	public void openSnapchat(View view){
-		try {
-		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.snapchat.android&hl=en")));
-		} catch (android.content.ActivityNotFoundException anfe) {
-		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=com.snapchat.android&hl=en")));
+		try{
+			Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://snapchat.com"));
+			intent.setPackage("com.snapchat.android");
+			startActivity(intent);
+		} catch(Exception e){
+			try {
+			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.snapchat.android&hl=en")));
+			} catch (android.content.ActivityNotFoundException anfe) {
+			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=com.snapchat.android&hl=en")));
+			}
 		}
 	}
 	
 	public void openVine(View view){
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://vine.co/RyersonUAR")));
+		try{
+			Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vine.co/RyersonUAR"));
+			intent.setPackage("co.vine.android");
+			startActivity(intent);
+		} catch(Exception e){
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://vine.co/RyersonUAR")));
+		}
 	}
 	
 	public void openTwitter(View view){
