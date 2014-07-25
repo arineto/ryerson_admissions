@@ -50,7 +50,11 @@ public class ConnectActivity extends Activity {
 	}
 	
 	public void openSnapchat(View view){
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://snapchat.com")));
+		try {
+		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.snapchat.android&hl=en")));
+		} catch (android.content.ActivityNotFoundException anfe) {
+		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=com.snapchat.android&hl=en")));
+		}
 	}
 	
 	public void openVine(View view){
