@@ -25,7 +25,7 @@
 
 	    <FrameLayout
 	        android:id="@+id/kerr_hall"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_central"
 	        android:layout_below="@+id/campus_tour_central"
@@ -36,7 +36,7 @@
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
 	            android:onClick="openKerrHall"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Kerr Hall"
 	            android:textSize="@dimen/campus_tour_height" />
 
@@ -47,13 +47,13 @@
 	            android:onClick="openKerrHall"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/kerr" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/rac"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/kerr_hall"
 	        android:layout_below="@+id/kerr_hall"
@@ -64,7 +64,7 @@
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
 	            android:onClick="openRAC"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="RAC"
 	            android:textSize="@dimen/campus_tour_height" />
 
@@ -75,13 +75,13 @@
 	            android:onClick="openRAC"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/rac" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/theatre_school"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/rac"
 	        android:layout_below="@+id/rac"
@@ -91,7 +91,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Theatre School"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openTheatreSchool" />
@@ -103,13 +103,13 @@
 	            android:onClick="openTheatreSchool"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/theatreschool" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/ryerson_theatre"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/theatre_school"
 	        android:layout_below="@+id/theatre_school"
@@ -119,7 +119,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Ryerson Theatre"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openRyersonTheatre" />
@@ -128,10 +128,11 @@
 	            android:layout_width="match_parent"
 	            android:layout_height="match_parent"
 	            android:background="@null"
+	            android:onClick="openRyersonTheatre"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" 
-	            android:onClick="openRyersonTheatre"/>
+	            android:src="@raw/theatre" />
+
 	    </FrameLayout>
 
 	    <TextView
@@ -146,7 +147,7 @@
 	    
 	    <FrameLayout
 	        android:id="@+id/architecture_building"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_east"
 	        android:layout_below="@+id/campus_tour_east"
@@ -156,7 +157,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Architecture Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openArchitectureBuilding" />
@@ -165,25 +166,26 @@
 	            android:layout_width="match_parent"
 	            android:layout_height="match_parent"
 	            android:background="@null"
+	            android:onClick="openArchitectureBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" 
-	            android:onClick="openArchitectureBuilding"/>
+	            android:src="@raw/architecture" />
+
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/eric_building"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/architecture_building"
 	        android:layout_below="@+id/architecture_building"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Eric Palin-Sally Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openEricBuilding" />
@@ -192,15 +194,16 @@
 	            android:layout_width="match_parent"
 	            android:layout_height="match_parent"
 	            android:background="@null"
+	            android:onClick="openEricBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" 
-	            android:onClick="openEricBuilding"/>
+	            android:src="@raw/eric" />
+
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/george_building"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/eric_building"
 	        android:layout_below="@+id/eric_building"
@@ -210,7 +213,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="George Vari Engineering Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openGeorgeBuilding" />
@@ -222,23 +225,23 @@
 	            android:onClick="openGeorgeBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/george" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/interior_design"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/george_building"
 	        android:layout_below="@+id/george_building"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Interior Design Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openInteriorDesignBuilding" />
@@ -250,23 +253,23 @@
 	            android:onClick="openInteriorDesignBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/interiordesign" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/monetary_times"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/interior_design"
 	        android:layout_below="@+id/interior_design"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Monetary Times"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openMonetaryTimes" />
@@ -278,23 +281,23 @@
 	            android:onClick="openMonetaryTimes"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/monetary" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/rogers_centre"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/monetary_times"
 	        android:layout_below="@+id/monetary_times"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Rogers Communication Centre"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openRogersCentre" />
@@ -306,13 +309,13 @@
 	            android:onClick="openRogersCentre"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/rcc" />
 
 	    </FrameLayout>
 	    
 	    <TextView
 	        android:id="@+id/campus_tour_west"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/rogers_centre"
 	        android:layout_below="@+id/rogers_centre"
@@ -322,17 +325,17 @@
 	    
 	    <FrameLayout
 	        android:id="@+id/jorgenson_hall"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_west"
 	        android:layout_below="@+id/campus_tour_west"
-	        android:layout_marginTop="5dp">
+	        android:layout_marginTop="5dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Jorgenson Hall"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openJorgensonHall" />
@@ -344,23 +347,23 @@
 	            android:onClick="openJorgensonHall"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/jorgenson" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/library"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/jorgenson_hall"
 	        android:layout_below="@+id/jorgenson_hall"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Library"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openLibrary" />
@@ -372,23 +375,23 @@
 	            android:onClick="openLibrary"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/library" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/podium_building"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/library"
 	        android:layout_below="@+id/library"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Podium Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openPodiumBuilding" />
@@ -400,23 +403,23 @@
 	            android:onClick="openPodiumBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/podium" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/student_learning"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/podium_building"
 	        android:layout_below="@+id/podium_building"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Student Learning Centre"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openStudentLearningCentre" />
@@ -428,13 +431,13 @@
 	            android:onClick="openStudentLearningCentre"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/studentlearningcentre" />
 
 	    </FrameLayout>
 	    
 	    <TextView
 	        android:id="@+id/campus_tour_south"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/student_learning"
 	        android:layout_below="@+id/student_learning"
@@ -444,17 +447,17 @@
 	    
 	    <FrameLayout
 	        android:id="@+id/bookstore"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_south"
 	        android:layout_below="@+id/campus_tour_south"
-	        android:layout_marginTop="5dp">
+	        android:layout_marginTop="5dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Ryerson Bookstore"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openRyersonBookstore" />
@@ -466,24 +469,24 @@
 	            android:onClick="openRyersonBookstore"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/bookstore" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/heidenberg_building"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/bookstore"
 	        android:layout_below="@+id/bookstore"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
 	            android:onClick="openHeidenbergBuilding"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Heidenberg Building"
 	            android:textSize="@dimen/campus_tour_height" />
 
@@ -494,13 +497,13 @@
 	            android:onClick="openHeidenbergBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/heidelberg" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/image_arts"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/heidenberg_building"
 	        android:layout_below="@+id/heidenberg_building"
@@ -510,7 +513,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Image Arts Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openImageArtsBuilding" />
@@ -522,13 +525,13 @@
 	            android:onClick="openImageArtsBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/imagearts" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/lake_devo"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/image_arts"
 	        android:layout_below="@+id/image_arts"
@@ -538,7 +541,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Lake Devo"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openLakeDevo" />
@@ -550,23 +553,23 @@
 	            android:onClick="openLakeDevo"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/lakedevo" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/ted_rogers"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/lake_devo"
 	        android:layout_below="@+id/lake_devo"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Ted Rogers School of Management"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openTedRogers" />
@@ -578,23 +581,23 @@
 	            android:onClick="openTedRogers"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/rogers" />
 
 	    </FrameLayout>
 
 	    <FrameLayout
 	        android:id="@+id/south_bond"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/ted_rogers"
 	        android:layout_below="@+id/ted_rogers"
-	        android:layout_marginTop="10dp">
+	        android:layout_marginTop="10dp" >
 
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="South Bond Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openSouthBuilding" />
@@ -606,13 +609,13 @@
 	            android:onClick="openSouthBuilding"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/southbond" />
 
 	    </FrameLayout>
 	    
 	    <FrameLayout
 	        android:id="@+id/student_campus"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/south_bond"
 	        android:layout_below="@+id/south_bond"
@@ -622,7 +625,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Student Campus Centre"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openStudentCampusCentre" />
@@ -634,13 +637,13 @@
 	            android:onClick="openStudentCampusCentre"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/studentcampuscentre" />
 
 	    </FrameLayout>
 	    
 	    <TextView
 	        android:id="@+id/campus_tour_north"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/student_campus"
 	        android:layout_below="@+id/student_campus"
@@ -650,7 +653,7 @@
 	    
 	    <FrameLayout
 	        android:id="@+id/mattamy"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_north"
 	        android:layout_below="@+id/campus_tour_north"
@@ -660,7 +663,7 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="fill_parent"
 	            android:gravity="center_vertical|center_horizontal|left"
-	            android:paddingLeft="100dp"
+	            android:paddingLeft="110dp"
 	            android:text="Mattamy Building"
 	            android:textSize="@dimen/campus_tour_height"
 	        	android:onClick="openMattamyCentre" />
@@ -672,7 +675,7 @@
 	            android:onClick="openMattamyCentre"
 	            android:padding="4dp"
 	            android:scaleType="fitStart"
-	            android:src="@drawable/photo19" />
+	            android:src="@raw/mattamy" />
 
 	    </FrameLayout>
 	    
