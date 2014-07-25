@@ -6,7 +6,7 @@
 
 	<RelativeLayout
 	    android:layout_width="match_parent"
-	    android:layout_height="1260dp"
+	    android:layout_height="wrap_content"
 	    android:paddingBottom="@dimen/activity_vertical_margin"
 	    android:paddingLeft="@dimen/activity_horizontal_margin"
 	    android:paddingRight="@dimen/activity_horizontal_margin"
@@ -21,245 +21,660 @@
 	        android:layout_alignParentLeft="true"
 	        android:layout_alignParentTop="true"
 	        android:text="Central"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_kerr_hall"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <FrameLayout
+	        android:id="@+id/kerr_hall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_central"
 	        android:layout_below="@+id/campus_tour_central"
-	        android:onClick="openKerrHall"
-	        android:text="Kerr Hall" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_RAC"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_kerr_hall"
-	        android:layout_below="@+id/campus_tour_kerr_hall"
-	        android:onClick="openRAC"
-	        android:text="RAC" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_theatre_school"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_RAC"
-	        android:layout_below="@+id/campus_tour_RAC"
-	        android:onClick="openTheatreSchool"
-	        android:text="Theatre School" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_ryerson_theatre"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_theatre_school"
-	        android:layout_below="@+id/campus_tour_theatre_school"
-	        android:onClick="openRyersonTheatre"
-	        android:text="Ryerson Theatre" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_architecture_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_east"
-	        android:layout_below="@+id/campus_tour_east"
-	        android:onClick="openArchitectureBuilding"
-	        android:text="Architecture Building" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_eric_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_architecture_building"
-	        android:layout_below="@+id/campus_tour_architecture_building"
-	        android:onClick="openEricBuilding"
-	        android:text="Eric Palin-Sally Building" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_geroge_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_eric_building"
-	        android:layout_below="@+id/campus_tour_eric_building"
-	        android:onClick="openGeorgeBuilding"
-	        android:text="Geroge Vari Engineering Building" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_interior_design_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_geroge_building"
-	        android:layout_below="@+id/campus_tour_geroge_building"
-	        android:onClick="openInteriorDesignBuilding"
-	        android:text="Interior Design Building" />
-	
-	    <Button
-	        android:id="@+id/campus_tour_monetary_times"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_interior_design_building"
-	        android:layout_below="@+id/campus_tour_interior_design_building"
-	        android:onClick="openMonetaryTimes"
-	        android:text="Monetary Times" />
+	        android:layout_marginTop="5dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:onClick="openKerrHall"
+	            android:paddingLeft="100dp"
+	            android:text="Kerr Hall"
+	            android:textSize="@dimen/campus_tour_height" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openKerrHall"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/rac"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/kerr_hall"
+	        android:layout_below="@+id/kerr_hall"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:onClick="openRAC"
+	            android:paddingLeft="100dp"
+	            android:text="RAC"
+	            android:textSize="@dimen/campus_tour_height" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openRAC"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/theatre_school"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/rac"
+	        android:layout_below="@+id/rac"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Theatre School"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openTheatreSchool" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openTheatreSchool"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/ryerson_theatre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/theatre_school"
+	        android:layout_below="@+id/theatre_school"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Ryerson Theatre"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openRyersonTheatre" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" 
+	            android:onClick="openRyersonTheatre"/>
+	    </FrameLayout>
 
 	    <TextView
 	        android:id="@+id/campus_tour_east"
-	        android:layout_width="match_parent"
+	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_ryerson_theatre"
-	        android:layout_below="@+id/campus_tour_ryerson_theatre"
-	        android:layout_marginTop="15dp"
+	        android:layout_alignLeft="@+id/ryerson_theatre"
+	        android:layout_below="@+id/ryerson_theatre"
+	        android:layout_marginTop="10dp"
 	        android:text="East"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <FrameLayout
+	        android:id="@+id/architecture_building"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/campus_tour_east"
+	        android:layout_below="@+id/campus_tour_east"
+	        android:layout_marginTop="5dp" >
 
-	    <Button
-	        android:id="@+id/campus_tour_rogers_centre"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/campus_tour_monetary_times"
-	        android:layout_centerHorizontal="true"
-	        android:onClick="openRogersCentre"
-	        android:text="Rogers Communications Centre" />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Architecture Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openArchitectureBuilding" />
 
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" 
+	            android:onClick="openArchitectureBuilding"/>
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/eric_building"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/architecture_building"
+	        android:layout_below="@+id/architecture_building"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Eric Palin-Sally Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openEricBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" 
+	            android:onClick="openEricBuilding"/>
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/george_building"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/eric_building"
+	        android:layout_below="@+id/eric_building"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="George Vari Engineering Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openGeorgeBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openGeorgeBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/interior_design"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/george_building"
+	        android:layout_below="@+id/george_building"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Interior Design Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openInteriorDesignBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openInteriorDesignBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/monetary_times"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/interior_design"
+	        android:layout_below="@+id/interior_design"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Monetary Times"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openMonetaryTimes" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openMonetaryTimes"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/rogers_centre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/monetary_times"
+	        android:layout_below="@+id/monetary_times"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Rogers Communication Centre"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openRogersCentre" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openRogersCentre"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
 	    <TextView
 	        android:id="@+id/campus_tour_west"
-	        android:layout_width="match_parent"
+	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_rogers_centre"
-	        android:layout_below="@+id/campus_tour_rogers_centre"
-	        android:layout_marginTop="15dp"
+	        android:layout_alignLeft="@+id/rogers_centre"
+	        android:layout_below="@+id/rogers_centre"
+	        android:layout_marginTop="10dp"
 	        android:text="West"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	    <Button
-	        android:id="@+id/campus_tour_jorgenson_hall"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <FrameLayout
+	        android:id="@+id/jorgenson_hall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_west"
 	        android:layout_below="@+id/campus_tour_west"
-	        android:onClick="openJorgensonHall"
-	        android:text="Jorgenson Hall" />
+	        android:layout_marginTop="5dp">
 
-	    <Button
-	        android:id="@+id/campus_tour_library"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_jorgenson_hall"
-	        android:layout_below="@+id/campus_tour_jorgenson_hall"
-	        android:onClick="openLibrary"
-	        android:text="Library" />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Jorgenson Hall"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openJorgensonHall" />
 
-	    <Button
-	        android:id="@+id/campus_tour_podium_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_library"
-	        android:layout_below="@+id/campus_tour_library"
-	        android:onClick="openPodiumBuilding"
-	        android:text="Podium Building" />
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openJorgensonHall"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
 
-	    <Button
-	        android:id="@+id/campus_tour_student_learning_centre"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_podium_building"
-	        android:layout_below="@+id/campus_tour_podium_building"
-	        android:onClick="openStudentLearningCentre"
-	        android:text="Student Learning Centre" />
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/library"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/jorgenson_hall"
+	        android:layout_below="@+id/jorgenson_hall"
+	        android:layout_marginTop="10dp">
 
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Library"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openLibrary" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openLibrary"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/podium_building"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/library"
+	        android:layout_below="@+id/library"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Podium Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openPodiumBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openPodiumBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/student_learning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/podium_building"
+	        android:layout_below="@+id/podium_building"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Student Learning Centre"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openStudentLearningCentre" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openStudentLearningCentre"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
 	    <TextView
 	        android:id="@+id/campus_tour_south"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignParentLeft="true"
-	        android:layout_below="@+id/campus_tour_student_learning_centre"
-	        android:layout_marginTop="15dp"
+	        android:layout_alignLeft="@+id/student_learning"
+	        android:layout_below="@+id/student_learning"
+	        android:layout_marginTop="10dp"
 	        android:text="South"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	    <Button
-	        android:id="@+id/campus_tour_ryerson_bookstore"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <FrameLayout
+	        android:id="@+id/bookstore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_south"
 	        android:layout_below="@+id/campus_tour_south"
-	        android:onClick="openRyersonBookstore"
-	        android:text="Ryerson Bookstore" />
+	        android:layout_marginTop="5dp">
 
-	    <Button
-	        android:id="@+id/campus_tour_heidenberg_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_ryerson_bookstore"
-	        android:layout_below="@+id/campus_tour_ryerson_bookstore"
-	        android:onClick="openHeidenbergBuilding"
-	        android:text="Heidenberg Building" />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Ryerson Bookstore"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openRyersonBookstore" />
 
-	    <Button
-	        android:id="@+id/campus_tour_image_arts_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_heidenberg_building"
-	        android:layout_below="@+id/campus_tour_heidenberg_building"
-	        android:onClick="openImageArtsBuilding"
-	        android:text="Image Arts Building" />
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openRyersonBookstore"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
 
-	    <Button
-	        android:id="@+id/campus_tour_lake_devo"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_image_arts_building"
-	        android:layout_below="@+id/campus_tour_image_arts_building"
-	        android:onClick="openLakeDevo"
-	        android:text="Lake Devo" />
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/heidenberg_building"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/bookstore"
+	        android:layout_below="@+id/bookstore"
+	        android:layout_marginTop="10dp">
 
-	    <Button
-	        android:id="@+id/campus_tour_ted_rogers"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_lake_devo"
-	        android:layout_below="@+id/campus_tour_lake_devo"
-	        android:onClick="openTedRogers"
-	        android:text="Ted Rogers School of Management" />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:onClick="openHeidenbergBuilding"
+	            android:paddingLeft="100dp"
+	            android:text="Heidenberg Building"
+	            android:textSize="@dimen/campus_tour_height" />
 
-	    <Button
-	        android:id="@+id/campus_tour_south_building"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_ted_rogers"
-	        android:layout_below="@+id/campus_tour_ted_rogers"
-	        android:onClick="openSouthBuilding"
-	        android:text="South Bond Building" />
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openHeidenbergBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
 
-	    <Button
-	        android:id="@+id/campus_tour_student_campus_centre"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_south_building"
-	        android:layout_below="@+id/campus_tour_south_building"
-	        android:onClick="openStudentCampusCentre"
-	        android:text="Student Campus Centre" />
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/image_arts"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/heidenberg_building"
+	        android:layout_below="@+id/heidenberg_building"
+	        android:layout_marginTop="10dp" >
 
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Image Arts Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openImageArtsBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openImageArtsBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/lake_devo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/image_arts"
+	        android:layout_below="@+id/image_arts"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Lake Devo"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openLakeDevo" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openLakeDevo"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/ted_rogers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/lake_devo"
+	        android:layout_below="@+id/lake_devo"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Ted Rogers School of Management"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openTedRogers" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openTedRogers"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+
+	    <FrameLayout
+	        android:id="@+id/south_bond"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/ted_rogers"
+	        android:layout_below="@+id/ted_rogers"
+	        android:layout_marginTop="10dp">
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="South Bond Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openSouthBuilding" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openSouthBuilding"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/student_campus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/south_bond"
+	        android:layout_below="@+id/south_bond"
+	        android:layout_marginTop="10dp" >
+
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Student Campus Centre"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openStudentCampusCentre" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openStudentCampusCentre"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
 	    <TextView
 	        android:id="@+id/campus_tour_north"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/campus_tour_student_campus_centre"
-	        android:layout_below="@+id/campus_tour_student_campus_centre"
-	        android:layout_marginTop="15dp"
+	        android:layout_alignLeft="@+id/student_campus"
+	        android:layout_below="@+id/student_campus"
+	        android:layout_marginTop="10dp"
 	        android:text="North"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	    <Button
-	        android:id="@+id/campus_tour_mattamy_centre"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <FrameLayout
+	        android:id="@+id/mattamy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
 	        android:layout_alignLeft="@+id/campus_tour_north"
 	        android:layout_below="@+id/campus_tour_north"
-	        android:onClick="openMattamyCentre"
-	        android:text="Mattamy Centre" />
+	        android:layout_marginTop="5dp" >
 
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical|center_horizontal|left"
+	            android:paddingLeft="100dp"
+	            android:text="Mattamy Building"
+	            android:textSize="@dimen/campus_tour_height"
+	        	android:onClick="openMattamyCentre" />
+
+	        <ImageButton
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:onClick="openMattamyCentre"
+	            android:padding="4dp"
+	            android:scaleType="fitStart"
+	            android:src="@drawable/photo19" />
+
+	    </FrameLayout>
+	    
 	</RelativeLayout>
 </ScrollView>
