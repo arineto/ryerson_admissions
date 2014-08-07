@@ -1,4 +1,4 @@
-package com.p15media.ryersonuniversityadmissions;
+package com.p15media.ryersonUniversityAdmissions;
 
 import java.io.File;
 import java.io.IOException;

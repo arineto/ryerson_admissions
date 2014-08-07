@@ -1,4 +1,4 @@
-package com.p15media.ryersonuniversityadmissions;
+package com.p15media.ryersonUniversityAdmissions;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

@@ -1,4 +1,4 @@
-package com.p15media.ryersonuniversityadmissions;
+package com.p15media.ryersonUniversityAdmissions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,7 +13,7 @@ public class VideoGalleryActivity extends Activity {
 	
 	private Intent intent;
 
-	@SuppressLint("InlinedApi")
+	@SuppressLint({ "InlinedApi", "NewApi" })
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

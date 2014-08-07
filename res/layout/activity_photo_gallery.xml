@@ -12,7 +12,7 @@
 	    android:paddingRight="@dimen/activity_horizontal_margin"
 	    android:paddingTop="@dimen/activity_vertical_margin"
 	    android:scrollbars="vertical"
-	    tools:context="com.p15media.ryersonuniversityadmissions.PhotoGalleryActivity$PlaceholderFragment" >
+	    tools:context="com.p15media.ryersonUniversityAdmissions.PhotoGalleryActivity$PlaceholderFragment" >
 
 		<ImageView
 		    android:id="@+id/imageView1"

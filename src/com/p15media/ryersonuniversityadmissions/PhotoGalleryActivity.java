@@ -1,4 +1,4 @@
-package com.p15media.ryersonuniversityadmissions;
+package com.p15media.ryersonUniversityAdmissions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -17,7 +17,7 @@ public class PhotoGalleryActivity extends Activity {
 						R.drawable.photo11, R.drawable.photo12, R.drawable.photo13, R.drawable.photo14, R.drawable.photo15,
 						R.drawable.photo16, R.drawable.photo17, R.drawable.photo18, R.drawable.photo19};
 	String[] texts = {"Toronto\n\nVibrant, multicultural, and Canada's largest city. Ryerson's campus can be seen in the centre of the image.",
-						"Student Campus Centre\n\nHome to a variety of student groups and services, as well as the Oakham Café and Ram in the Rye pub.",
+						"Student Campus Centre\n\nHome to a variety of student groups and services, as well as the Oakham Caf?? and Ram in the Rye pub.",
 						"Ronald D. Besse information and Learning Commons\n\nThe Ryerson Library has more than just few book - you can also access technology, tutoring and reference services.",
 						"Students hanging out with our mascot, Eggy the Ram", 
 						"Ted Rogers Schol of Information Management\n\nHome to Ryerson's Bachelor of Commerce and MBA programs, located in the heart of Toronto's business community.",

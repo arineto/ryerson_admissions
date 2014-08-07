@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/videogallerybg"
-    tools:context="com.p15media.ryersonuniversityadmissions.VideoGalleryActivity$PlaceholderFragment" >
+    tools:context="com.p15media.ryersonUniversityAdmissions.VideoGalleryActivity$PlaceholderFragment" >
 
     <ImageView
         android:id="@+id/imageView2"
