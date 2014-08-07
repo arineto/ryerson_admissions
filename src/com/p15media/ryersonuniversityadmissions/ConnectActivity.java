@@ -83,6 +83,6 @@ public class ConnectActivity extends Activity {
 	}
 	
 	public void openNews(View view){
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.mailoutinteractive.com/Industry/Subscribe.aspx?m=30364")));
+		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://why.ryerson.ca/newsletter-signup/")));
 	}
 }
